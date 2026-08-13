@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Iri — Software Engineer | Privacy, Security &amp; Wellbeing Tools</title>
+<meta name="description" content="Iri (iri-dev) is a software engineer building privacy, security and wellbeing tools, including WardenOne, an all-in-one privacy and security extension for Chromium browsers.">
+<link rel="canonical" href="https://iri-dev.github.io/">
+<meta name="author" content="Iri">
+<meta name="theme-color" content="#a153ce">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Iri — Software Engineer">
+<meta property="og:description" content="Building privacy, security and wellbeing tools. Creator of WardenOne.">
+<meta property="og:url" content="https://iri-dev.github.io/">
+<meta name="twitter:card" content="summary">
+
+<!-- Says plainly that iri-dev, Iri, this page and the GitHub profile are one person, and that
+     WardenOne is their work. That is the association the search engines were missing. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Iri",
+  "alternateName": "iri-dev",
+  "url": "https://iri-dev.github.io/",
+  "jobTitle": "Software Engineer",
+  "knowsAbout": ["Software engineering", "Cyber security", "Privacy", "Browser extensions"],
+  "sameAs": [
+    "https://github.com/iri-dev",
+    "https://github.com/iri-dev/WardenOne"
+  ]
+}
+</script>
+
+<style>
+:root {
+  --plum-aa: #a153ce; --rose-aa: #d13a87;
+  --glow-a: #c05fbd; --glow-b: #dd6ba4;
+  --ink: #2b1a3d; --ink-2: #58466c; --ink-3: #7d6e8f;
+  --bg: #fbf7fd; --surface: #fff; --surface-2: #f6eefb;
+  --line: rgba(140,90,175,.16); --line-2: rgba(140,90,175,.28);
+  --shadow-s: 0 1px 2px rgba(60,20,90,.05), 0 2px 8px rgba(60,20,90,.05);
+  --shadow-m: 0 4px 12px rgba(60,20,90,.07), 0 16px 40px rgba(60,20,90,.09);
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f2ebf7; --ink-2: #c3b3d1; --ink-3: #9b8aad;
+    --bg: #1a0f20; --surface: #251731; --surface-2: #2e1d3b;
+    --line: rgba(190,140,225,.16); --line-2: rgba(190,140,225,.26);
+    --shadow-s: 0 1px 2px rgba(0,0,0,.3);
+    --shadow-m: 0 6px 18px rgba(0,0,0,.38), 0 20px 48px rgba(0,0,0,.3);
+  }
+}
+* { box-sizing: border-box; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font);
+  font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+a { color: #8f43bd; text-underline-offset: 2px; }
+@media (prefers-color-scheme: dark) { a { color: #d9a6f2; } }
+a:focus-visible { outline: 2px solid var(--plum-aa); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -.02em; margin: 0; }
+
+header { position: relative; overflow: hidden; padding: 86px 0 10px; text-align: center; }
+header::before, header::after {
+  content: ""; position: absolute; border-radius: 50%; filter: blur(70px);
+  opacity: .5; pointer-events: none; z-index: 0;
+}
+header::before {
+  width: 560px; height: 560px; top: -280px; left: 50%; margin-left: -430px;
+  background: radial-gradient(circle, var(--glow-a), transparent 68%);
+}
+header::after {
+  width: 500px; height: 500px; top: -240px; left: 50%; margin-left: -60px;
+  background: radial-gradient(circle, var(--glow-b), transparent 68%);
+}
+header > * { position: relative; z-index: 1; }
+h1 { font-size: clamp(2.4rem, 7vw, 3.6rem); font-weight: 800; }
+.says { color: var(--ink-3); font-size: .95rem; margin: 10px 0 0; }
+.lede { font-size: 1.15rem; color: var(--ink-2); margin: 20px auto 0; max-width: 560px; }
+
+.links { display: flex; gap: 11px; justify-content: center; flex-wrap: wrap; margin: 30px 0 0; }
+.btn {
+  display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-weight: 700;
+  border-radius: 10px; padding: 12px 22px; border: 1px solid transparent;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.btn svg { width: 18px; height: 18px; }
+.btn-primary {
+  background: linear-gradient(135deg, var(--plum-aa), var(--rose-aa)); color: #fff;
+  box-shadow: 0 6px 18px rgba(150,60,180,.34);
+}
+.btn-primary:hover { transform: translateY(-2px); }
+.btn-ghost {
+  background: var(--surface); color: var(--ink); border-color: var(--line-2);
+  box-shadow: var(--shadow-s);
+}
+.btn-ghost:hover { transform: translateY(-2px); background: var(--surface-2); }
+
+section { padding: 60px 0 0; }
+h2 { font-size: 1.55rem; font-weight: 800; margin-bottom: 16px; }
+p { color: var(--ink-2); }
+
+.card {
+  display: block; text-decoration: none; color: inherit; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 16px; padding: 24px; margin-bottom: 14px;
+  box-shadow: var(--shadow-s); transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-m); }
+.card h3 { font-size: 1.15rem; font-weight: 750; margin-bottom: 6px; }
+.card p { margin: 0; font-size: .95rem; }
+.tag {
+  display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; color: #fff; border-radius: 999px; padding: 3px 11px;
+  background: linear-gradient(135deg, var(--plum-aa), var(--rose-aa)); margin-bottom: 10px;
+}
+footer {
+  margin-top: 76px; padding: 30px 0 50px; border-top: 1px solid var(--line);
+  color: var(--ink-3); font-size: .9rem; text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Hey, I'm Iri 💜</h1>
+    <p class="says">pronounced <em>eye-ree</em> &middot; <strong>iri-dev</strong> on GitHub</p>
+    <p class="lede">
+      I recently finished my degree in software engineering and cyber security. Now I use it out in
+      the open, making software that helps people feel safer, healthier and more in control.
+    </p>
+    <div class="links">
+      <a class="btn btn-primary" href="https://github.com/iri-dev">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.75.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18a4.65 4.65 0 0 1 1.24 3.24c0 4.63-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+        GitHub profile
+      </a>
+      <a class="btn btn-ghost" href="https://iri-dev.github.io/WardenOne/">WardenOne</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section>
+    <h2>What I build</h2>
+    <p>Whether it's privacy tools, wellbeing apps, or projects still taking shape, I like building
+    things that genuinely help people. Creating software with care, because technology should help
+    people.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <a class="card" href="https://iri-dev.github.io/WardenOne/">
+      <span class="tag">Browser extension</span>
+      <h3>WardenOne</h3>
+      <p>One extension. Every defence. An all-in-one privacy, security and anti-scam extension for
+      Chromium browsers — ad and tracker blocking, anti-fingerprinting, phishing and scam
+      protection, download scanning and IP-leak protection. 80+ protections, no account, no
+      telemetry, everything on your own device. Free and open source under GPLv3.</p>
+    </a>
+
+    <a class="card" href="https://github.com/iri-dev">
+      <span class="tag">More</span>
+      <h3>Everything else</h3>
+      <p>Other projects, works in progress and things still taking shape live on my GitHub
+      profile.</p>
+    </a>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><a href="https://github.com/iri-dev">github.com/iri-dev</a> &middot;
+       <a href="https://iri-dev.github.io/WardenOne/">WardenOne</a></p>
+    <p>&copy; 2026 Iri</p>
+  </div>
+</footer>
+
+</body>
+</html>
