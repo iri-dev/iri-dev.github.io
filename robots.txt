@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Both sitemaps are declared here because robots.txt is only read at the domain root. The copy at
+# /WardenOne/robots.txt is served, but no crawler ever looks for it, so it cannot announce anything.
 Sitemap: https://iri-dev.github.io/sitemap.xml
+Sitemap: https://iri-dev.github.io/WardenOne/sitemap.xml
