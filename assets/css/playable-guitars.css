@@ -1,0 +1,46 @@
+.guitar-playground { color: #51365e; }
+.playable-guitar { position: relative; margin: 24px 0; padding: 22px 26px 20px; border-radius: 4px 8px 22px 5px; background: repeating-linear-gradient(transparent 0 27px,#b791ca1c 27px 28px),#fffdf7; box-shadow: 2px 7px 18px #62416b1a; }
+.playable-guitar::before { content: ''; position: absolute; width: 95px; height: 21px; top: -8px; left: 40%; transform: rotate(-3deg); background: #e5d0edb3; }
+.playable-guitar + .playable-guitar { transform: rotate(.2deg); }
+.playable-guitar h4 { font: 700 1.8rem/1.2 var(--hand); color: #80518f; margin: 0; }
+.playable-guitar .guitar-caption { color: #6b5177; font-size: .85rem; margin: 5px 0 0; }
+.guitar-window { overflow-x: auto; overscroll-behavior-x: contain; margin: 6px -10px 0; border-radius: 10px; scrollbar-color: #ad87bd #f1e7f4; }
+.guitar-drawing { display: block; width: 100%; min-width: 0; height: auto; touch-action: pan-y; user-select: none; cursor: crosshair; overflow: visible; }
+.guitar-window.is-close .guitar-drawing { min-width: 960px; touch-action: pan-x; }
+.guitar-drawing:focus-visible { outline-offset: -4px !important; }
+.guitar-drawing text { font-family: var(--sans); }
+.guitar-string { pointer-events: none; }
+.guitar-string.is-ringing { stroke: #fff6c7; filter: drop-shadow(0 0 2px #fff5cd); }
+.guitar-finger { fill: #ebc9fa; stroke: #57336e; stroke-width: 1.5; }
+.guitar-finger-label { fill: #35213e; font-size: 8px; font-weight: 700; pointer-events: none; }
+.guitar-reading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 5px 20px; margin-bottom: 12px; }
+.guitar-reading output { font: 1.3rem var(--hand); color: #70517d; }
+.guitar-paper-link { font: 1.15rem var(--hand); color: #704480; text-decoration: underline; text-underline-offset: 4px; background: transparent; border: 0; cursor: pointer; padding: 8px 0; min-height: 44px; }
+.guitar-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.guitar-controls > span { font: 1.35rem var(--hand); margin-right: 4px; }
+.guitar-chord { background: #fffdf7; border: 1px solid #9b77ac; color: #58316b; border-radius: 48% 45% 42% 49%; min-width: 44px; min-height: 44px; padding: 5px 10px; font: 700 1.1rem var(--hand); cursor: pointer; }
+.guitar-chord[aria-pressed="true"] { background: #ead8f3; border-color: #80518f; box-shadow: 0 2px 0 #b493c4; }
+.guitar-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; margin-top: 6px; }
+.guitar-actions button { font: 1.3rem var(--hand); background: transparent; color: #714284; border: 0; border-bottom: 1px dashed #bb9acc; padding: 7px 2px; min-height: 44px; cursor: pointer; }
+.guitar-actions button[aria-pressed="true"] { color: #492258; font-weight: 700; }
+.guitar-status { min-height: 1.5em; font-size: .78rem; line-height: 1.5; margin: 10px 0 0; color: #765f7f; }
+.guitar-instructions { margin: 22px 0 14px; max-width: 780px; font-size: .88rem; }
+.guitar-instructions summary { cursor: pointer; font: 1.4rem var(--hand); color: var(--link); padding-block: 8px; }
+.guitar-instructions p { margin: 7px 0 10px; line-height: 1.7; }
+.guitar-instructions kbd { font: .85em var(--sans); padding: 1px 5px; border: 1px solid #cdb3d9; border-bottom-width: 2px; border-radius: 3px; white-space: nowrap; }
+.guitar-sound-note { font-size: .76rem; line-height: 1.65; max-width: 760px; color: var(--muted); }
+:root[data-theme="dark"] .playable-guitar { background-color: #f0e8e0; }
+:root[data-theme="dark"] .guitar-chord { background: #f8f0e8; }
+:root[data-theme="dark"] .guitar-chord[aria-pressed="true"] { background: #ddc2ec; }
+@media (max-width: 600px) {
+  .playable-guitar { padding: 22px 15px 17px; }
+  .guitar-window { margin-inline: -10px; }
+  .guitar-caption { font-size: .78rem; }
+  .guitar-reading { gap: 0; margin-top: 5px; }
+  .guitar-reading output { font-size: 1.15rem; }
+  .guitar-controls { gap: 6px; }
+  .guitar-controls > span { width: 100%; }
+  .guitar-chord { padding-inline: 9px; }
+  .guitar-actions { column-gap: 18px; }
+  .guitar-actions button { font-size: 1.2rem; }
+}

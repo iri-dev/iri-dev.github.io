@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 410" width="150" height="410" fill="none">
+  <defs><linearGradient id="electric-body" x1="25" y1="250" x2="126" y2="345" gradientUnits="userSpaceOnUse"><stop stop-color="#a077bb"/><stop offset=".46" stop-color="#70428b"/><stop offset="1" stop-color="#4a2b60"/></linearGradient><linearGradient id="electric-metal"><stop stop-color="#898391"/><stop offset=".5" stop-color="#fbf8ff"/><stop offset="1" stop-color="#aaa2b5"/></linearGradient></defs>
+  <ellipse cx="73" cy="395" rx="52" ry="6" fill="#4b275b" opacity=".09"/>
+  <g transform="rotate(8 75 200)">
+    <path d="M61 23L66 6 89 8 93 38 83 57H64Z" fill="#68417e" stroke="#4d315e" stroke-width="2"/>
+    <path d="M67 44H83V263H62Z" fill="#503b48" stroke="#42303d" stroke-width="2"/>
+    <path d="M67 48H82V253H64Z" fill="#725563"/>
+    <path d="M47 231Q57 239 62 220L63 201Q48 204 39 222C33 236 39 252 27 271C12 297 16 338 40 354C58 366 64 354 77 356C102 370 127 350 128 321C129 299 117 277 104 260C95 248 99 237 110 221Q92 220 84 240L83 261H62V251Q52 248 47 231Z" fill="url(#electric-body)" stroke="#50305f" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M45 241Q52 256 61 252V272H85L88 254Q93 249 100 247Q94 261 103 274C112 289 116 312 109 329L87 337 59 333 37 309Q29 282 45 263Z" fill="#ede4f1" stroke="#b59ec2" stroke-width="1.2"/>
+    <path d="M33 284Q23 319 47 342" stroke="#c6a8d8" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+    <rect x="60" y="269" width="28" height="10" rx="2" fill="#3e2d48" stroke="#9884a3"/>
+    <rect x="60" y="295" width="28" height="10" rx="2" fill="#3e2d48" stroke="#9884a3"/>
+    <rect x="58" y="318" width="34" height="8" rx="2" fill="url(#electric-metal)" stroke="#827389"/>
+    <g stroke="#c4b1be" stroke-width="1.1"><path d="M67 65H82M67 82H82M67 100H82M66 120H82M66 142H82M66 166H83M65 193H83M65 223H83M64 251H83"/></g>
+    <g fill="#c9b8d3"><circle cx="75" cy="91" r="1.6"/><circle cx="75" cy="130" r="1.6"/><circle cx="75" cy="180" r="1.6"/><circle cx="71" cy="236" r="1.4"/><circle cx="78" cy="236" r="1.4"/></g>
+    <g stroke="#dcd4df" stroke-width=".65" opacity=".9"><path d="M68 31L67 320M71 30L70 320M74 29V320M77 28V320M80 27L80 320M83 26L83 320"/></g>
+    <g fill="url(#electric-metal)" stroke="#827389" stroke-width=".8"><circle cx="61" cy="20" r="3.6"/><circle cx="61" cy="31" r="3.6"/><circle cx="61" cy="42" r="3.6"/><circle cx="94" cy="16" r="3.6"/><circle cx="95" cy="27" r="3.6"/><circle cx="94" cy="38" r="3.6"/><circle cx="103" cy="314" r="4.5"/><circle cx="105" cy="332" r="4.5"/></g>
+    <path d="M128 367Q108 374 110 387Q113 400 141 395" stroke="#79608a" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

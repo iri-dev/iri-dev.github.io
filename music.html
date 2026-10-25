@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-GB" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My music corner · Iri (Iris Molina)</title>
+<meta name="description" content="My music corner: real Spotify playlists, my electric and acoustic guitar notebook, and a little browser guitar to strum. Music I listen to and love making.">
+<link rel="canonical" href="https://iri-dev.github.io/music.html">
+<meta name="author" content="Iris Molina (Iri)">
+<meta name="theme-color" content="#f4eaf8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iri · Iris Molina">
+<meta property="og:title" content="My music corner">
+<meta property="og:description" content="My tape rack, my electric and acoustic guitars, and a few handwritten song ideas. Sometimes I'm the one making the music.">
+<meta property="og:url" content="https://iri-dev.github.io/music.html">
+<meta property="og:image" content="https://iri-dev.github.io/assets/img/og-card.png">
+<meta property="og:image:alt" content="Hi, I'm Iri. Iris Molina, iri-dev.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/guitar-notebook.css">
+<link rel="stylesheet" href="assets/css/playable-guitars.css">
+<script>try{var t=localStorage.getItem('iri-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<script src="assets/js/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Iri (Iris Molina), home">
+      <span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span>
+      <small>Iris Molina<br>iri-dev</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="true"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>my room</a>
+      <a href="about.html"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg>about me</a>
+      <a href="world.html"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>my world</a>
+      <a href="projects.html"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>projects</a>
+      <a href="journal.html"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>diary</a>
+      <a href="contact.html"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>say hi</a>
+    </nav>
+    <button class="lights" type="button" data-theme-toggle aria-pressed="false" aria-label="Turn the lights off (dark mode)">
+      <span class="knob"><svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg></span>
+      <span class="label">lights off</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <span class="hand">from the headphones and the guitar</span>
+        <h1>My music <em>corner</em></h1>
+        <p class="lede">Rock and metal at full volume, rap for confidence, soft songs for late nights. I play electric and acoustic guitar too, when I want to make the music myself.</p>
+        <p class="music-guitar-link hand"><a href="#my-guitars">a little notebook beside my guitars ↓</a></p>
+        <div class="btn-row"><a class="btn btn-main btn-sm" href="https://open.spotify.com/user/31u5fupicagi457xulprhu3s7674" data-spotify-profile><svg class="icon" aria-hidden="true"><use href="#i-headphones"/></svg>follow me on Spotify</a></div>
+      </div>
+    </div>
+
+    <section aria-labelledby="tapes-title">
+      <div class="head">
+        <span class="hand">pick a tape, any tape</span>
+        <h2 id="tapes-title">My tape rack</h2>
+        <p>These are my real playlists from Spotify. Pick one to see what's on it, then play it right here or open it on Spotify.</p>
+      </div>
+      <div class="rack-wrap">
+        <div class="rack" role="group" aria-label="My playlists" data-rack></div>
+        <div class="deck" aria-live="polite" data-deck-root>
+          <div class="deck-stage" data-deck="stage">
+            <div class="cassette deck-tape" data-deck="tape">
+              <span class="label" data-deck="label">Iri Approved</span>
+              <span class="window"><span class="reel"></span><span class="reel"></span></span>
+              <span class="base"></span>
+            </div>
+          </div>
+          <p class="deck-meta pixel" data-deck="meta"></p>
+          <p class="deck-desc" data-deck="desc"></p>
+          <ul class="aka deck-artists" data-deck="artists"></ul>
+          <div class="btn-row">
+            <button class="btn btn-main btn-sm" type="button" data-deck="play"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><span>load Spotify player</span></button>
+
+            <a class="btn btn-soft btn-sm" data-deck="open" href="https://open.spotify.com/user/31u5fupicagi457xulprhu3s7674">open on Spotify <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </div>
+
+          <p class="deck-note">I keep Spotify off this page until you choose “load Spotify player.” Its player may use cookies and collect device and listening information. I can’t control Spotify’s data practices. <a href="privacy.html#spotify">My privacy note</a> · <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Spotify’s privacy policy</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="repeat-title">
+      <div class="head">
+        <span class="hand">the names that turn up again and again on my playlists</span>
+        <h2 id="repeat-title">Artists on repeat</h2>
+      </div>
+      <ul class="aka repeat" data-artist-wall></ul>
+    </section>
+
+    <section class="section guitar-notes" id="my-guitars" aria-labelledby="guitar-title">
+      <div class="head">
+        <span class="hand">a few notes from the other side of the headphones</span>
+        <h2 id="guitar-title">The girl behind the <span class="guitar-title-end">guitar ♡</span></h2>
+        <p>Sometimes I'm listening to the music. Sometimes I'm the one making it.</p>
+      </div>
+      <div class="guitar-pages">
+        <article class="notebook guitar-page guitar-page-electric" aria-labelledby="electric-title">
+          <img class="guitar-illustration" src="assets/art/guitar-electric.svg" alt="A decorative illustration of an amethyst electric guitar with silver details" width="150" height="410" loading="lazy" decoding="async">
+          <span class="hand guitar-kind">electric</span><h3 id="electric-title">The louder side of me</h3>
+          <p>I love rock music, so of course I was going to end up playing electric guitar. There's something ridiculously satisfying about a good riff, especially when you finally get a part right after playing it over and over. Sometimes I want something loud, energetic, and a little dramatic.</p>
+          <ul class="guitar-labels" aria-label="What I love about electric guitar"><li>Rock &amp; metal</li><li>Riffs</li><li>Distortion</li><li>Favorite pastime</li></ul>
+          <p class="hand guitar-side-note">Sometimes I just want to play something loud.</p>
+        </article>
+        <article class="notebook guitar-page guitar-page-acoustic" aria-labelledby="acoustic-title">
+          <img class="guitar-illustration" src="assets/art/guitar-acoustic.svg" alt="A decorative illustration of a honey-colored acoustic guitar with a round sound hole" width="150" height="410" loading="lazy" decoding="async">
+          <span class="hand guitar-kind">acoustic</span><h3 id="acoustic-title">The softer side of me</h3>
+          <p>I love my acoustic guitar too. Sometimes I just want to sit down, play something pretty, and forget about everything else for a while. It doesn't always have to be loud to mean something.</p>
+          <ul class="guitar-labels" aria-label="What I love about acoustic guitar"><li>Melodies</li><li>Chords</li><li>Quieter evenings</li><li>Just for me</li></ul>
+          <p class="hand guitar-side-note">An acoustic guitar and a quiet evening are a pretty good combination.</p>
+        </article>
+      </div>
+      <p class="guitar-between hand">I spend enough time making things on a computer. It's nice to make music with my hands.</p>
+      <section class="notebook guitar-songbook" aria-labelledby="stand-title">
+        <h3 id="stand-title">Songs on my <span class="guitar-title-end">music stand ♪</span></h3>
+        <p class="songbook-intro">A few songs I'd love to explore on guitar. These are my inspiration picks.</p>
+        <div class="songbook-pages">
+          <div><h4>Electric guitar inspiration</h4><ul class="stand-songs"><li><span class="stand-song">My Demons</span><span class="stand-artist">STARSET</span></li><li><span class="stand-song">The Diary of Jane</span><span class="stand-artist">Breaking Benjamin</span></li><li><span class="stand-song">Throne</span><span class="stand-artist">Bring Me the Horizon</span></li><li><span class="stand-song">The Summoning</span><span class="stand-artist">Sleep Token</span></li></ul></div>
+          <div><h4>Acoustic guitar inspiration</h4><ul class="stand-songs"><li><span class="stand-song">Iris</span><span class="stand-artist">Goo Goo Dolls</span></li><li><span class="stand-song">Chasing Cars</span><span class="stand-artist">Snow Patrol</span></li><li><span class="stand-song">Snuff</span><span class="stand-artist">Slipknot</span></li><li><span class="stand-song">The Night We Met</span><span class="stand-artist">Lord Huron</span></li></ul></div>
+        </div>
+        <div class="guitar-picks-note"><svg viewBox="0 0 130 80" aria-hidden="true"><defs><linearGradient id="pick-amethyst"><stop stop-color="#b18bcb"/><stop offset="1" stop-color="#684184"/></linearGradient><linearGradient id="pick-silver"><stop stop-color="#a6a0b4"/><stop offset=".45" stop-color="#f5f1fa"/><stop offset="1" stop-color="#bbb4c5"/></linearGradient></defs><path d="M22 10Q38 2 53 12Q68 28 44 64Q39 70 34 64Q9 27 22 10Z" fill="url(#pick-amethyst)" stroke="#6f4e85" transform="rotate(-15 38 35)"/><path d="M76 21Q91 13 105 23Q120 38 98 70Q94 77 88 70Q65 36 76 21Z" fill="url(#pick-silver)" stroke="#9a8aa6" transform="rotate(18 92 46)"/><path d="M34 23Q38 17 42 23Q47 17 50 23Q53 28 42 35Q31 28 34 23" fill="none" stroke="#eadcf3" stroke-width="1.2"/></svg><p class="hand">Some girls collect shoes.<br>I collect hobbies.</p></div>
+      </section>
+      <div class="guitar-turn-heading" id="your-turn">
+        <h3 class="hand">Your turn ♡</h3>
+        <p>I've talked enough about my guitars. Go on, have a strum.</p>
+      </div>
+      <div class="guitar-playground" id="playable-guitars" aria-label="My two playable guitars"></div>
+      <noscript><p>I need JavaScript switched on to play these little browser guitars.</p></noscript>
+      <details class="guitar-instructions" id="guitar-playing-help">
+        <summary class="hand">A few notes before I make some noise ♪</summary>
+        <p>I can tap a fret to hold and play a note, or brush across the strings over the body to strum. My chord scribbles put all six strings in place for me. The little numbers on the strings show which frets I'm holding; × means that string is muted.</p>
+        <p>On a smaller screen, I can open <em>a closer look at the frets</em> and scroll sideways along the guitar. A tap plays a note; a vertical brush across the strings plays a strum.</p>
+        <p>With the guitar focused, <kbd>1</kbd>–<kbd>6</kbd> pick high E through low E. <kbd>Space</kbd> strums down; <kbd>Shift</kbd> + <kbd>Space</kbd> strums up. <kbd>↑</kbd> and <kbd>↓</kbd> choose a string; <kbd>←</kbd> and <kbd>→</kbd> move one fret and play it.</p>
+        <p>For a melody, the top keyboard row <kbd>Q W E R T Y U I O P [ ] \</kbd> plays frets 0–12 on my selected string. <kbd>Escape</kbd> hushes both guitars and stops the example tune.</p>
+        <p><strong>A tiny song to try:</strong> I press <kbd>1</kbd> to choose high E, then play <kbd>Q Q I I P P I</kbd>, followed by <kbd>Y Y T T E E Q</kbd>. That's the opening of the traditional melody <em>Twinkle, Twinkle, Little Star</em>. With a mouse or my fingertips, the same frets are <strong>0 0 7 7 9 9 7 · 5 5 4 4 2 2 0</strong>, all on the top string. My last note in each phrase gets a little longer to ring.</p>
+      </details>
+      <p class="guitar-sound-note">My little browser guitars use locally hosted recordings of guitar notes, with standard E–A–D–G–B–E tuning. These aren't recordings of me playing. Acoustic sounds: <a href="https://github.com/facebookincubator/Meta-open-sound/tree/main/systems/instruments/meta-steel-guitar" target="_blank" rel="noopener noreferrer">Meta Steel Guitar</a>; electric sounds: <a href="https://freepats.zenvoid.org/ElectricGuitar/clean-electric-guitar.html" target="_blank" rel="noopener noreferrer">FreePats FSBS</a>. Both CC0. <a href="assets/audio/guitar/SOURCES.md">Sound credits</a>.</p>
+    </section>
+
+    <section class="section">
+      <div class="promise" style="border-style:solid">
+        <svg class="icon" aria-hidden="true"><use href="#i-headphones"/></svg>
+        <p>Got a song I should hear? <a href="contact.html">Send it my way</a>. My playlists are always hungry. ♡</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="footer-body">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="index.html" aria-label="Iri, home"><span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span><small>Iris Molina<br>iri-dev</small></a>
+        <p>Made by hand with matcha and stubbornness. I don’t run site analytics. Spotify loads only if you choose its player. <a href="privacy.html">My privacy note</a>. All of my code is open for anyone to read, this website’s too.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">about me</a></li>
+        <li><a href="world.html">my world</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="wardenone.html">WardenOne</a></li>
+        <li><a href="hydraheart.html">HydraHeart</a></li>
+        <li><a href="journal.html">diary</a></li>
+        <li><a href="arcade.html">arcade</a></li>
+        <li><a href="music.html">music corner</a></li>
+        <li><a href="shelf.html">my shelf</a></li>
+        <li><a href="kitchen.html">my kitchen</a></li>
+        <li><a href="drinks.html">my drink bar</a></li>
+        <li><a href="flowers.html">my flower press</a></li>
+        <li><a href="contact.html">say hi</a></li>
+        <li><a href="https://github.com/iri-dev">GitHub</a></li>
+      </ul>
+      <div class="footer-small"><span>© 2026 Iris Molina (Iri)</span><span class="hand">thanks for visiting my room ♡</span></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/spotify-config.js"></script>
+<script src="assets/js/music.js"></script>
+<script src="assets/js/playable-guitars.js"></script>
+</body>
+</html>

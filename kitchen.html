@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My little kitchen ♡ · Iris Molina</title>
+<meta name="description" content="My illustrated food diary: cozy dinners, chocolate brownies, pretty drinks, and the flavors I keep choosing.">
+<link rel="canonical" href="https://iri-dev.github.io/kitchen.html">
+<meta name="author" content="Iris Molina (Iri)">
+<meta name="theme-color" content="#f4eaf8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iri · Iris Molina">
+<meta property="og:title" content="My little kitchen ♡">
+<meta property="og:description" content="Comfort food, something sweet, and a playlist that’s probably too loud. A page from my food diary.">
+<meta property="og:url" content="https://iri-dev.github.io/kitchen.html">
+<meta property="og:image" content="https://iri-dev.github.io/assets/img/og-card.png">
+<meta property="og:image:alt" content="Hi, I'm Iri. Iris Molina, iri-dev.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/kitchen.css">
+<script>try{var t=localStorage.getItem('iri-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body class="kitchen-page">
+<script src="assets/js/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Iri (Iris Molina), home">
+      <span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span>
+      <small>Iris Molina<br>iri-dev</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>my room</a>
+      <a href="about.html"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg>about me</a>
+      <a href="world.html"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>my world</a>
+      <a href="projects.html"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>projects</a>
+      <a href="journal.html"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>diary</a>
+      <a href="contact.html"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>say hi</a>
+    </nav>
+    <button class="lights" type="button" data-theme-toggle aria-pressed="false" aria-label="Turn the lights off (dark mode)">
+      <span class="knob"><svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg></span>
+      <span class="label">lights off</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <header class="k-hero">
+      <div>
+        <span class="hand">my food diary, mostly in purple</span>
+        <h1>My <em>little kitchen</em> ♡</h1>
+        <p class="k-tagline">Comfort food, something sweet, and a playlist that’s probably too loud.</p>
+        <p>I have a soft spot for Japanese food, creamy pasta, and anything involving chocolate. These are the dinners I’d choose, the treats I’d make room for, and the little food opinions I can’t keep to myself.</p>
+        <nav class="k-shortcuts" aria-label="Around my kitchen"><a href="#recipe-book">open my food diary</a><a href="#drinks">my little drinks menu</a><a href="#confessions">kitchen confessions</a></nav>
+      </div>
+      <figure class="k-hero-art"><img src="assets/art/kitchen/kitchen-table.svg" alt="An illustrated open notebook on an ivory table with a lavender mixing bowl, wooden spoon, matcha, strawberries, and cherries" width="720" height="480"><figcaption>A few of my favorite things on the table. ♡</figcaption></figure>
+    </header>
+
+    <section class="k-book" id="recipe-book" aria-labelledby="recipe-book-title">
+      <header class="k-book-intro"><div><h2 id="recipe-book-title">Pages from my kitchen</h2><p>My comfort dinners and something sweet at the end.</p></div><button class="k-favorite-tab" type="button" data-open-favorite>my comfort<br>dinner ♡</button></header>
+      <nav aria-label="My food diary contents"><ol class="k-index" data-recipe-index></ol></nav>
+      <div class="k-spread">
+        <article class="k-page k-picture-page" aria-labelledby="recipe-title">
+          <span class="k-recipe-label" data-recipe-label>My comfort dinner</span><h3 id="recipe-title" tabindex="-1">Teriyaki chicken rice bowl</h3>
+          <p data-recipe-description>Sticky chicken, fluffy rice, and a glossy sweet-savory sauce.</p>
+          <img class="k-recipe-image" src="assets/art/kitchen/teriyaki.svg" width="440" height="330" alt="Illustration of a teriyaki chicken rice bowl" data-recipe-image>
+          <blockquote class="k-personal-note" data-recipe-note>A little extra sauce for the rice. I have priorities.</blockquote>
+          <span class="k-favorite-sticker" data-recipe-favorite>I keep this page close ♡</span>
+        </article>
+        <div class="k-page k-recipe-page" id="recipe-method">
+          <span class="k-diary-label hand">a page from my food diary</span>
+          <div class="k-journal" data-food-journal></div>
+          <p class="k-margin hand" data-food-margin></p>
+        </div>
+      </div>
+      <footer class="k-nav"><button type="button" data-previous-recipe>← previous page</button><span data-page-number>page 1 of 6</span><button type="button" data-next-recipe>next page →</button></footer>
+      <p class="sr-only" role="status" aria-live="polite" data-recipe-announcement></p>
+    </section>
+
+    <section class="k-section" id="drinks" aria-labelledby="drinks-title"><header class="k-heading"><div><span class="hand">a separate menu, because obviously</span><h2 id="drinks-title">Something pretty in my glass</h2><p>Two little drinks that deserve their own corner. The rest have moved next door to <a href="drinks.html">my little drink bar</a>.</p></div><span class="hand">My cherry obsession<br>has followed me in here.</span></header><div class="k-drinks" data-drink-menu></div></section>
+
+    <section class="k-section" id="confessions" aria-labelledby="confessions-title"><header class="k-heading"><div><span class="hand">scribbled between the pages</span><h2 id="confessions-title">Kitchen confessions ♡</h2><p>My little opinions and things I tell myself.</p></div></header><div class="k-confessions" data-kitchen-confessions></div><ul class="k-opinions" aria-label="My food opinions" data-food-opinions></ul></section>
+    <footer class="k-outro"><p class="hand">A pretty plate, a loud song, and something made with care.</p><p>That’s the kind of kitchen I want this to be. ♡</p></footer>
+    <noscript><p>I’ve also kept <a href="assets/kitchen/NOTEBOOK.md">my food diary as a plain text notebook</a>.</p></noscript>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="footer-body">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="index.html" aria-label="Iri, home"><span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span><small>Iris Molina<br>iri-dev</small></a>
+        <p>Made by hand with matcha and stubbornness. I don’t run site analytics. Spotify loads only if you choose its player. <a href="privacy.html">My privacy note</a>. All of my code is open for anyone to read, this website’s too.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">about me</a></li>
+        <li><a href="world.html">my world</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="wardenone.html">WardenOne</a></li>
+        <li><a href="hydraheart.html">HydraHeart</a></li>
+        <li><a href="journal.html">diary</a></li>
+        <li><a href="arcade.html">arcade</a></li>
+        <li><a href="music.html">music corner</a></li>
+        <li><a href="shelf.html">my shelf</a></li>
+        <li><a href="kitchen.html">my kitchen</a></li>
+        <li><a href="drinks.html">my drink bar</a></li>
+        <li><a href="flowers.html">my flower press</a></li>
+        <li><a href="contact.html">say hi</a></li>
+        <li><a href="https://github.com/iri-dev">GitHub</a></li>
+      </ul>
+      <div class="footer-small"><span>© 2026 Iris Molina (Iri)</span><span class="hand">thanks for visiting my room ♡</span></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/kitchen-data.js"></script>
+<script src="assets/js/kitchen.js"></script>
+</body>
+</html>

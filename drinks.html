@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My little drink bar ♡ · Iris Molina</title>
+<meta name="description" content="My little drink menu: brown sugar bubble tea, strawberry matcha, my Monster fridge, cherry lemonade, cozy hot chocolate, and an After Hours cocktail cabinet.">
+<link rel="canonical" href="https://iri-dev.github.io/drinks.html">
+<meta name="author" content="Iris Molina (Iri)">
+<meta name="theme-color" content="#f4eaf8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iri · Iris Molina">
+<meta property="og:title" content="My little drink bar ♡">
+<meta property="og:description" content="Bubble tea, pretty little drinks, and a suspicious amount of cherry.">
+<meta property="og:url" content="https://iri-dev.github.io/drinks.html">
+<meta property="og:image" content="https://iri-dev.github.io/assets/img/og-card.png">
+<meta property="og:image:alt" content="Hi, I'm Iri. Iris Molina, iri-dev.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/drinks.css">
+<script>try{var t=localStorage.getItem('iri-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body class="drinks-page">
+<script src="assets/js/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Iri (Iris Molina), home">
+      <span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span>
+      <small>Iris Molina<br>iri-dev</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>my room</a>
+      <a href="about.html"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg>about me</a>
+      <a href="world.html"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>my world</a>
+      <a href="projects.html"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>projects</a>
+      <a href="journal.html"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>diary</a>
+      <a href="contact.html"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>say hi</a>
+    </nav>
+    <button class="lights" type="button" data-theme-toggle aria-pressed="false" aria-label="Turn the lights off (dark mode)">
+      <span class="knob"><svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg></span>
+      <span class="label">lights off</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <header class="d-hero">
+      <div>
+        <span class="hand">my favorites, written by hand</span>
+        <h1>My <em>little drink bar</em> ♡</h1>
+        <p class="d-tagline">Bubble tea, pretty little drinks, and a suspicious amount of cherry.</p>
+        <p>My bubble tea treats, matcha for slow mornings, the cans I reach for, and warm mugs for cold nights. Then there’s my evening cabinet, because I have opinions about pretty cocktail glasses, too.</p>
+        <p class="d-neighbor">Hungry too? <a href="kitchen.html">My little kitchen</a> is right next door.</p>
+        <nav class="d-shortcuts" aria-label="Around my drink bar"><a href="#bubble-tea">bubble tea</a><a href="#pretty">matcha &amp; pretty</a><a href="#fridge">my fridge</a><a href="#fruity">fruity</a><a href="#cozy">cozy cupboard</a><a href="#after-hours">after hours</a></nav>
+      </div>
+      <figure class="d-hero-art"><img src="assets/art/drinks/drink-bar.svg" alt="An illustrated handwritten café menu card on an ivory table, with brown sugar bubble tea, a strawberry matcha latte, and cherries" width="720" height="480"><figcaption>Open all day. Very cherry. ♡</figcaption></figure>
+    </header>
+
+    <section class="d-picker d-paper" aria-labelledby="picker-title">
+      <div class="d-picker-head">
+        <span class="hand">can’t decide?</span>
+        <h2 id="picker-title">What are we drinking? ♡</h2>
+        <p>Pick a mood and I’ll pour you something.</p>
+        <div class="d-moods" role="group" aria-label="Pick a mood" data-moods></div>
+      </div>
+      <div class="d-pour" data-pour>
+        <img src="assets/art/st-drinks.svg" alt="" width="200" height="200" data-pour-image>
+        <div>
+          <span class="hand" data-pour-label>your glass is ready when you are</span>
+          <h3 data-pour-title>Tell me your mood</h3>
+          <p class="d-tags" data-pour-tags>Sweet, pretty, fruity, cozy, or refreshing.</p>
+          <p data-pour-line>I have a favorite for my sweet moods, my cozy moods, and my very cherry moods.</p>
+          <a class="d-pour-link hand" href="#bubble-tea" data-pour-link hidden>find it on my menu ↓</a>
+        </div>
+      </div>
+      <p class="sr-only" role="status" aria-live="polite" data-pour-status></p>
+    </section>
+
+    <div class="d-menu d-paper">
+      <p class="d-menu-title"><span class="hand">my little drink bar</span><span>the daytime menu · open whenever I want</span></p>
+
+      <section class="d-section" id="bubble-tea" aria-labelledby="bubble-title">
+        <header class="d-heading">
+          <span class="d-num">01 /</span>
+          <div><span class="hand">my favorite little treat</span><h2 id="bubble-title">The Bubble Tea Corner</h2><p>Milk teas with chewy pearls, and one fruity tea full of popping boba.</p></div>
+          <p class="d-scribble hand">Bubble tea is a little treat and I refuse to hear otherwise.</p>
+        </header>
+        <div class="d-cards d-cards-featured" data-menu="bubble"></div>
+      </section>
+
+      <section class="d-section d-pretty" id="pretty" aria-labelledby="pretty-title">
+        <header class="d-heading">
+          <span class="d-num">02 /</span>
+          <div><span class="hand">the softer side of my menu</span><h2 id="pretty-title">Matcha &amp; Pretty Drinks</h2><p>I like creamy drinks, soft green swirls, and a little sweetness.</p></div>
+          <p class="d-scribble hand">I love drinks that look almost too pretty to drink.</p>
+        </header>
+        <div class="d-cards" data-menu="pretty"></div>
+      </section>
+
+      <section class="d-section" id="fridge" aria-labelledby="fridge-title">
+        <header class="d-heading">
+          <span class="d-num">03 /</span>
+          <div><span class="hand">the cans I reach for</span><h2 id="fridge-title">My fridge shelf</h2><p>Pick one to read my opinion of it.</p></div>
+          <p class="d-scribble hand">Some days I want matcha. Some days I want a Monster. I’m a girl of contrasts.</p>
+        </header>
+        <div class="d-fridge-layout">
+          <div class="d-fridge">
+            <div class="d-fridge-inside">
+              <div class="d-shelf" role="group" aria-label="Top shelf: my Monster favorites" data-shelf="top"></div>
+              <div class="d-shelf" role="group" aria-label="Bottom shelf: Pepsi Max" data-shelf="bottom"></div>
+            </div>
+            <p class="d-magnet hand">No caffeine after 2 PM. I’m trying to be sensible.</p>
+          </div>
+          <article class="d-can-card" aria-live="polite" data-can-card>
+            <img src="assets/art/drinks/can-mixxd-punch.svg" alt="" width="160" height="260" data-can-image>
+            <div>
+              <span class="d-can-number hand" data-can-number>my number one ♡</span>
+              <h3 data-can-name>Juiced Monster Mixxd Punch</h3>
+              <p class="d-tags" data-can-flavor>Tropical punch, with cherry juice in the mix</p>
+              <p class="d-can-note hand" data-can-note>My number one.</p>
+              <p class="d-small" data-can-caffeine>160 mg caffeine per 500 ml can</p>
+              <a href="https://www.monsterenergy.com/en-gb/energy-drinks/juiced-monster/mixxd-punch/" target="_blank" rel="noopener noreferrer" data-can-link>official page ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="d-section" id="fruity" aria-labelledby="fruity-title">
+        <header class="d-heading">
+          <span class="d-num">04 /</span>
+          <div><span class="hand">the colorful part of my menu</span><h2 id="fruity-title">Fruity Little Obsessions</h2><p>My cherry favorite, pink lemonade, and the iced tea I’d choose on a hot day.</p></div>
+          <p class="d-scribble hand">Cherry-flavored anything immediately gets my attention.</p>
+        </header>
+        <div class="d-cards d-cards-featured" data-menu="fruity"></div>
+      </section>
+
+      <section class="d-section" id="cozy" aria-labelledby="cozy-title">
+        <header class="d-heading">
+          <span class="d-num">05 /</span>
+          <div><span class="hand">for cold evenings</span><h2 id="cozy-title">The Cozy Cupboard</h2><p>My chocolate opinions and the mugs I’d curl up with.</p></div>
+          <p class="d-scribble hand">Warm hands, soft socks, and something in a mug.</p>
+        </header>
+        <div class="d-cupboard"><div class="d-cards" data-menu="cozy"></div></div>
+      </section>
+    </div>
+
+    <aside class="d-hydrate d-paper" aria-labelledby="hydrate-title">
+      <img src="assets/art/drinks/water.svg" alt="" width="200" height="220" loading="lazy">
+      <div>
+        <h2 id="hydrate-title" class="hand">Hydrate beautifully ♡</h2>
+        <p>I can fill a whole menu with matcha and cherry, then forget the glass of water beside me. HydraHeart is my little reminder.</p>
+        <a href="hydraheart.html">meet HydraHeart ↗</a>
+      </div>
+    </aside>
+
+    <section class="d-after" id="after-hours" aria-labelledby="after-title">
+      <header class="d-after-head">
+        <span class="d-num">06 /</span>
+        <div>
+          <span class="hand">my evening picks</span>
+          <h2 id="after-title">After Hours ♡</h2>
+          <p>I have a soft spot for pretty glasses and fruity flavors. These six are my picks for nights out and slow evenings in, with a cherry signature and a very purple cocktail getting special attention.</p>
+        </div>
+      </header>
+
+      <div class="d-after-layout">
+        <div class="d-cabinet" data-cabinet>
+          <div class="d-cabinet-crown" aria-hidden="true"></div>
+          <div class="d-cabinet-body">
+            <div class="d-cabinet-inside" id="cabinet-inside" data-cabinet-inside></div>
+            <div class="d-door d-door-left" aria-hidden="true"></div>
+            <div class="d-door d-door-right" aria-hidden="true"><span class="d-door-tag hand">open me ♡</span></div>
+          </div>
+          <div class="d-cabinet-feet" aria-hidden="true"></div>
+          <button class="d-cabinet-toggle" type="button" aria-expanded="false" aria-controls="cabinet-inside" data-cabinet-toggle>open my cabinet ♡</button>
+        </div>
+
+        <div class="d-foldout">
+          <p class="d-foldout-top"><span class="hand">the fold-out menu</span><span>six little glasses</span></p>
+          <ol class="d-foldout-list" data-cocktail-menu></ol>
+          <p class="d-foldout-small">I pick a glass to open its page in my notebook.</p>
+        </div>
+      </div>
+
+      <article class="d-notebook d-paper" aria-labelledby="cocktail-title" data-notebook>
+        <div class="d-notebook-page">
+          <img src="assets/art/drinks/cherry-amaretto-sour.svg" alt="" width="320" height="330" data-cocktail-image>
+          <span class="hand d-notebook-label" data-cocktail-label>My signature cocktail</span>
+          <h3 id="cocktail-title" tabindex="-1" data-cocktail-name>Cherry Amaretto Sour</h3>
+          <p class="d-tags" data-cocktail-tags>Amaretto · Cherry · Lemon</p>
+          <p class="d-occasion" data-cocktail-occasion>For a slow evening with my favorite people</p>
+          <blockquote class="hand" data-cocktail-note>If I’m choosing a signature cocktail, obviously there’s going to be cherry involved.</blockquote>
+          <p data-cocktail-description>Sweet almond amaretto, tart lemon, and cherry, shaken until there’s a soft foam on top.</p>
+        </div>
+        <div class="d-notebook-page d-notebook-notes">
+          <span class="d-journal-label hand">a few thoughts in the margin</span>
+          <div class="d-journal" data-cocktail-journal></div>
+          <p class="d-margin hand" data-cocktail-margin></p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="d-outro"><p class="hand">Sometimes cute, sometimes cozy, sometimes sophisticated.</p><p>Always a little bit cherry. ♡</p></footer>
+    <noscript><p>I’ve also kept <a href="assets/drinks/MENU.md">my drink menu and notebook as plain text</a>.</p></noscript>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="footer-body">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="index.html" aria-label="Iri, home"><span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span><small>Iris Molina<br>iri-dev</small></a>
+        <p>Made by hand with matcha and stubbornness. I don’t run site analytics. Spotify loads only if you choose its player. <a href="privacy.html">My privacy note</a>. All of my code is open for anyone to read, this website’s too.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">about me</a></li>
+        <li><a href="world.html">my world</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="wardenone.html">WardenOne</a></li>
+        <li><a href="hydraheart.html">HydraHeart</a></li>
+        <li><a href="journal.html">diary</a></li>
+        <li><a href="arcade.html">arcade</a></li>
+        <li><a href="music.html">music corner</a></li>
+        <li><a href="shelf.html">my shelf</a></li>
+        <li><a href="kitchen.html">my kitchen</a></li>
+        <li><a href="drinks.html">my drink bar</a></li>
+        <li><a href="flowers.html">my flower press</a></li>
+        <li><a href="contact.html">say hi</a></li>
+        <li><a href="https://github.com/iri-dev">GitHub</a></li>
+      </ul>
+      <div class="footer-small"><span>© 2026 Iris Molina (Iri)</span><span class="hand">thanks for visiting my room ♡</span></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/drinks-data.js"></script>
+<script src="assets/js/drinks.js"></script>
+</body>
+</html>

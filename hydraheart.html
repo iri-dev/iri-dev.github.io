@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en-GB" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HydraHeart · a free water tracker with a heart, by Iri (Iris Molina)</title>
+<meta name="description" content="HydraHeart is a free Android water tracker built around Hydra, a little glass heart with moods, personalities and levels. No ads, no subscription, no account, no internet permission. Made by Iri (Iris Molina, iri-dev).">
+<link rel="canonical" href="https://iri-dev.github.io/hydraheart.html">
+<meta name="author" content="Iris Molina (Iri)">
+<meta name="theme-color" content="#f4eaf8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Iri · Iris Molina">
+<meta property="og:title" content="HydraHeart · meet Hydra">
+<meta property="og:description" content="A free water tracker for Android with a little glass heart who cheers you on. Coming soon.">
+<meta property="og:url" content="https://iri-dev.github.io/hydraheart.html">
+<meta property="og:image" content="https://iri-dev.github.io/assets/img/og-card.png">
+<meta property="og:image:alt" content="Hi, I'm Iri. Iris Molina, iri-dev.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/project-screenshots.css">
+<script>try{var t=localStorage.getItem('iri-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "HydraHeart",
+  "description": "A free water tracker for Android built around Hydra, a little glass heart with moods, personalities and levels. No ads, no subscription, no account and no internet permission.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Android",
+  "url": "https://iri-dev.github.io/hydraheart.html",
+  "sameAs": ["https://github.com/iri-dev/HydraHeart"],
+  "screenshot": ["https://iri-dev.github.io/assets/img/projects/hydraheart-hydra.webp", "https://iri-dev.github.io/assets/img/projects/hydraheart-hero.webp", "https://iri-dev.github.io/assets/img/projects/hydraheart-themes.webp"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+  "author": { "@type": "Person", "@id": "https://iri-dev.github.io/#iri", "name": "Iris Molina", "alternateName": ["Iri", "iri-dev"], "url": "https://iri-dev.github.io/" }
+}
+</script>
+</head>
+<body>
+<script src="assets/js/icons.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Iri (Iris Molina), home">
+      <span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span>
+      <small>Iris Molina<br>iri-dev</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg>my room</a>
+      <a href="about.html"><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg>about me</a>
+      <a href="world.html"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>my world</a>
+      <a href="projects.html" aria-current="true"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>projects</a>
+      <a href="journal.html"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>diary</a>
+      <a href="contact.html"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>say hi</a>
+    </nav>
+    <button class="lights" type="button" data-theme-toggle aria-pressed="false" aria-label="Turn the lights off (dark mode)">
+      <span class="knob"><svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg></span>
+      <span class="label">lights off</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <a class="btn btn-soft btn-sm back" href="projects.html"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>all my projects</a>
+
+    <section class="proj-hero" aria-labelledby="hh-title">
+      <div class="proj-art" style="--art:linear-gradient(160deg,#cfe6ff,#ecd2fb)">
+        <img src="assets/art/card-hydraheart.svg" alt="Hydra, a smiling glass heart half full of water, wearing a little crown" width="200" height="200">
+        <span class="sticker butter" style="--r:-8deg;left:-14px;top:30px">coming soon ✦</span>
+        <span class="sticker sky" style="--r:6deg;right:-10px;bottom:42px">hi, I'm Hydra!</span>
+      </div>
+      <div>
+        <span class="hand">card #2 in my collection</span>
+        <h1 id="hh-title">Hydra<em>Heart</em></h1>
+        <p class="tagline">Hydrate beautifully.</p>
+        <p class="lede">A free water tracker for Android, built around Hydra: a little glass heart who cheers you on. Every drink you log pours into her in its own colour, and she grows with you as your habit does.</p>
+        <ul class="aka">
+          <li class="sticker sky" style="--r:-2deg">free, no subscription</li>
+          <li class="sticker mint" style="--r:2deg">no ads</li>
+          <li class="sticker lilac" style="--r:-1deg">no account</li>
+          <li class="sticker pink" style="--r:3deg">no internet needed</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-main" href="https://github.com/iri-dev/HydraHeart"><svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>follow along on GitHub</a>
+          <a class="btn btn-soft" href="journal/why-hydraheart.html"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>why I'm making her</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-shots" aria-labelledby="hh-screens-title">
+      <div class="head">
+        <span class="hand">the app behind the little heart</span>
+        <h2 id="hh-screens-title">Inside HydraHeart</h2>
+        <p>The Android interface I'm building, from the daily tracker to its themes.</p>
+      </div>
+      <div class="screenshot-gallery" data-screenshot-gallery>
+        <figure class="sg-active" id="hh-screenshot">
+          <a class="sg-stage" href="assets/img/projects/hydraheart-hydra.webp" data-screenshot-open aria-label="View Hydra on the home screen at full size">
+            <img src="assets/img/projects/hydraheart-hydra.webp" alt="HydraHeart Android home screen with a blue glass heart, a 1500 ml total toward a 2525 ml goal, progress bar, drink totals, and bottom navigation" width="480" height="1001" loading="lazy" decoding="async" data-screenshot-image>
+            <span class="sg-zoom-hint" aria-hidden="true">View full size ↗</span>
+          </a>
+          <figcaption class="sg-details">
+            <p class="sg-count" role="status" data-screenshot-count>Screenshot 1 of 3</p>
+            <h3 data-screenshot-title>Hydra on the home screen</h3>
+            <p class="sg-description" data-screenshot-caption>My Android home screen shows Hydra, the day's water total, goal progress, and drink totals, with logging a tap away.</p>
+            <div class="sg-choices" role="group" aria-label="Choose a HydraHeart screenshot">
+              <a class="sg-choice" href="assets/img/projects/hydraheart-hydra.webp" data-screenshot-choice data-title="Hydra on the home screen" data-caption="My Android home screen shows Hydra, the day's water total, goal progress, and drink totals, with logging a tap away." data-alt="HydraHeart Android home screen with a blue glass heart, a 1500 ml total toward a 2525 ml goal, progress bar, drink totals, and bottom navigation" data-width="480" data-height="1001"><img src="assets/img/projects/hydraheart-hydra-thumb.webp" alt="" width="240" height="501" loading="lazy" decoding="async"><span>Home screen</span></a>
+              <a class="sg-choice" href="assets/img/projects/hydraheart-hero.webp" data-screenshot-choice data-title="A look around the app" data-caption="I've brought five of my app screens together here: mood check-in, drinks, home, personality choices, and trophies." data-alt="Composite of five HydraHeart Android screens showing a mood check-in, drink categories, the home tracker, personality choices, and trophies" data-width="1200" data-height="682"><img src="assets/img/projects/hydraheart-hero-thumb.webp" alt="" width="240" height="136" loading="lazy" decoding="async"><span>Around the app</span></a>
+              <a class="sg-choice" href="assets/img/projects/hydraheart-themes.webp" data-screenshot-choice data-title="Light and dark themes" data-caption="My theme overview shows the same home screen across 18 light palettes and 12 dark palettes, from Matcha to Cosmic Girl." data-alt="HydraHeart theme overview with 18 light and 12 dark versions of the Android home screen, each labeled with its palette name" data-width="1000" data-height="1357"><img src="assets/img/projects/hydraheart-themes-thumb.webp" alt="" width="240" height="326" loading="lazy" decoding="async"><span>Theme collection</span></a>
+            </div>
+
+            <p class="sg-note">Screenshots from my development build. I'm still finishing the app, so the interface may evolve.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="moods-title">
+      <div class="head">
+        <span class="hand">her face follows your day</span>
+        <h2 id="moods-title">Hydra's moods</h2>
+        <p>The closer you get to your goal, the happier she gets. Too much coffee, though, and she starts to worry.</p>
+      </div>
+      <div class="moods">
+        <div class="mood"><img src="assets/art/hydra-worried.svg" alt="Hydra nearly empty, looking worried" width="200" height="200"><span class="hand">worried</span><p>a long way to go</p></div>
+        <div class="mood"><img src="assets/art/hydra-content.svg" alt="Hydra a little under half full, looking content" width="200" height="200"><span class="hand">content</span><p>getting there</p></div>
+        <div class="mood"><img src="assets/art/hydra-happy.svg" alt="Hydra mostly full, smiling with rosy cheeks" width="200" height="200"><span class="hand">happy</span><p>nearly at your goal</p></div>
+        <div class="mood"><img src="assets/art/hydra-ecstatic.svg" alt="Hydra full to the top, beaming with sparkles" width="200" height="200"><span class="hand">ecstatic</span><p>goal reached!</p></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="inside-title">
+      <div class="head">
+        <span class="hand">everything's included, nothing's locked</span>
+        <h2 id="inside-title">What's inside</h2>
+      </div>
+      <div class="features">
+        <div class="feature" style="--r:-1deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-boba"/></svg></span><h3>70 drinks</h3><p>From a tiny espresso to a litre of water, each with its caffeine, sugar and more.</p></div>
+        <div class="feature" style="--r:1deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></span><h3>A goal made for you</h3><p>Worked out from your weight, how active you are and your climate, with the maths shown.</p></div>
+        <div class="feature" style="--r:-.5deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span><h3>She talks to you</h3><p>Over a thousand lines, depending on the time of day and how you're doing.</p></div>
+        <div class="feature" style="--r:1deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span><h3>Mood check-ins</h3><p>Happy, calm, okay, tired or stressed. Over time it becomes a little mood calendar.</p></div>
+        <div class="feature" style="--r:.5deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg></span><h3>60 trophies</h3><p>From your very first sip to a month-long streak.</p></div>
+        <div class="feature" style="--r:-1deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg></span><h3>30 themes</h3><p>Strawberry Milk, Matcha, Ocean Depths, Cosmic Girl and lots more.</p></div>
+        <div class="feature" style="--r:1deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg></span><h3>Gentle reminders</h3><p>As many as you like, at times that suit you, written in Hydra's voice.</p></div>
+        <div class="feature" style="--r:-.5deg"><span class="badge"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></span><h3>Focus Mode</h3><p>Hides her face for a calm, simple tracker. Neither way is the wrong way.</p></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="persona-title">
+      <div class="head">
+        <span class="hand">same Hydra, completely different voice</span>
+        <h2 id="persona-title">Pick her personality</h2>
+      </div>
+      <ul class="aka" style="gap:14px">
+        <li class="sticker pink" style="--r:-3deg">Bestie</li>
+        <li class="sticker butter" style="--r:2deg">Slay Queen</li>
+        <li class="sticker sky" style="--r:-1deg">Soft Girl</li>
+        <li class="sticker peach" style="--r:3deg">Villain Era</li>
+        <li class="sticker mint" style="--r:-2deg">Zen Master</li>
+        <li class="sticker lilac" style="--r:1deg">Coach</li>
+        <li class="sticker" style="--r:-2deg">??? hidden</li>
+        <li class="sticker" style="--r:3deg">??? hidden</li>
+      </ul>
+      <p style="margin-top:16px">Two personalities are secret. One appears when you've been doing brilliantly, and one appears when things have been hard. Hydra tells you herself when one unlocks.</p>
+    </section>
+
+    <section class="section" aria-labelledby="levels-title">
+      <div class="head">
+        <span class="hand">every sip earns her HP</span>
+        <h2 id="levels-title">She grows with you</h2>
+      </div>
+      <div class="levels">
+        <div class="level"><span class="pixel">LV 2</span><svg class="icon" aria-hidden="true"><use href="#i-gem"/></svg><b>a necklace</b></div>
+        <div class="level"><span class="pixel">LV 3</span><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><b>sparkles</b></div>
+        <div class="level"><span class="pixel">LV 5</span><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><b>her own diary</b></div>
+        <div class="level"><span class="pixel">LV 6</span><svg class="icon" aria-hidden="true"><use href="#i-crown"/></svg><b>a crown</b></div>
+        <div class="level"><span class="pixel">LV 7</span><svg class="icon" aria-hidden="true"><use href="#i-flower"/></svg><b>flowers</b></div>
+        <div class="level"><span class="pixel">LV 8</span><svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg><b>a rainbow shimmer</b></div>
+        <div class="level"><span class="pixel">LV 9</span><svg class="icon" aria-hidden="true"><use href="#i-butterfly"/></svg><b>a butterfly</b></div>
+        <div class="level gold"><span class="pixel">LV 10</span><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><b>golden legendary form</b></div>
+      </div>
+    </section>
+
+    <section class="section two-up" aria-label="Why I'm making her, and my promises">
+      <div class="note sky tape" style="--r:-1.5deg;--tr:3deg;--tape:rgba(159,208,255,.75)">
+        <span class="hand">why I'm making her</span>
+        <p>I wanted to drink more water, and every app that could help wanted a monthly payment first. Being reminded to look after yourself shouldn't cost money, so I made my own and gave it a heart.</p>
+        <p style="margin-top:12px"><a href="journal/why-hydraheart.html">The whole story is in my diary →</a></p>
+      </div>
+      <div class="paper-list tape" style="--tape:rgba(159,208,255,.75)">
+        <h2>my promises ♡</h2>
+        <ul>
+          <li>No subscription, ever. Nothing is locked away.</li>
+          <li>No ads.</li>
+          <li>No account to make.</li>
+          <li>It doesn't even ask for internet access.</li>
+          <li>Your drinks and moods stay on your phone.</li>
+          <li>You can read every line of its code.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="head">
+        <span class="hand">things people ask me</span>
+        <h2 id="faq-title">Little questions</h2>
+      </div>
+      <div class="page-paper qa">
+        <svg class="doodle-corner doodle" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8 1c0 1.7-2.4 2.2-2.4 3.7M12 17h.01"/></svg>
+        <h3>When can I get it?</h3>
+        <p>Soon! I'm finishing her off now. Follow HydraHeart on GitHub and you'll see the first release the moment it's out.</p>
+        <h3>Will it cost anything?</h3>
+        <p>No. No subscription, no ads and no premium version. Everything in the app is for everyone.</p>
+        <h3>Does it need the internet?</h3>
+        <p>No. HydraHeart doesn't even ask for internet permission, so your drinks, moods and diary never leave your phone.</p>
+        <h3>Do I have to have the cute heart?</h3>
+        <p>Not at all. Focus Mode hides her face and speech bubbles and leaves a calm, simple tracker. You can switch whenever you like, and she won't take it personally.</p>
+        <h3>Is there an iPhone version?</h3>
+        <p>Not right now. HydraHeart is an Android app.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="promise" style="border-style:solid">
+        <svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg>
+        <p>Got an idea for Hydra, like a drink, a theme or something she should say? <a href="contact.html">Tell me</a>. She's still growing.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="scallop" aria-hidden="true"></div>
+  <div class="footer-body">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="index.html" aria-label="Iri, home"><span class="wordmark">iri<span class="dot" aria-hidden="true">✿</span></span><small>Iris Molina<br>iri-dev</small></a>
+        <p>Made by hand with matcha and stubbornness. I don’t run site analytics. Spotify loads only if you choose its player. <a href="privacy.html">My privacy note</a>. All of my code is open for anyone to read, this website’s too.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">about me</a></li>
+        <li><a href="world.html">my world</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="wardenone.html">WardenOne</a></li>
+        <li><a href="hydraheart.html">HydraHeart</a></li>
+        <li><a href="journal.html">diary</a></li>
+        <li><a href="arcade.html">arcade</a></li>
+        <li><a href="music.html">music corner</a></li>
+        <li><a href="shelf.html">my shelf</a></li>
+        <li><a href="kitchen.html">my kitchen</a></li>
+        <li><a href="drinks.html">my drink bar</a></li>
+        <li><a href="flowers.html">my flower press</a></li>
+        <li><a href="contact.html">say hi</a></li>
+        <li><a href="https://github.com/iri-dev">GitHub</a></li>
+      </ul>
+      <div class="footer-small"><span>© 2026 Iris Molina (Iri)</span><span class="hand">thanks for visiting my room ♡</span></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/project-screenshots.js"></script>
+</body>
+</html>

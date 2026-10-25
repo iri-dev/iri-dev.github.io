@@ -1,0 +1,22 @@
+These fonts are hosted here so visitors are never sent to a third party.
+All four are licensed under the SIL Open Font License 1.1: https://openfontlicense.org
+
+fraunces.woff2, fraunces-italic.woff2
+  Fraunces, Copyright 2020 The Fraunces Project Authors (https://github.com/undercasetype/Fraunces)
+
+nunito.woff2, nunito-italic.woff2
+  Nunito, Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+
+caveat.woff2
+  Caveat, Copyright 2014 The Caveat Project Authors (https://github.com/googlefonts/caveat)
+
+silkscreen.woff2
+  Silkscreen, Copyright 2001 The Silkscreen Project Authors (https://github.com/googlefonts/silkscreen)
+
+Latin subsets, downloaded from Google Fonts on 2026-10-22 and 2026-10-23.
+
+Full upstream copyright notices and license texts accompany the fonts:
+  fraunces-OFL.txt
+  nunito-OFL.txt
+  caveat-OFL.txt
+  silkscreen-OFL.txt

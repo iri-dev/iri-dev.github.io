@@ -1,0 +1,155 @@
+/* Iri's flower press: a pressed-flower journal with paper tabs, a ribbon, and specimen labels.
+   Paper stays paper at night, so the writing on it stays dark. */
+.flowers-page { --f-ink: #4c3450; --f-head: #3a2443; --f-muted: #73607a; --f-rose: #a0567f; --f-violet: #6a45a8; --f-paper: #fffaf1; }
+
+/* The cover */
+.f-hero { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 18px; margin-bottom: 30px; }
+.f-hero .hand { font-size: 1.65rem; }
+.f-hero h1 { font-size: clamp(2.65rem, 5.6vw, 4.6rem); line-height: 1.06; letter-spacing: -.04em; margin: 12px 0 16px; }
+.f-tagline { font: italic 400 clamp(1.1rem, 1.8vw, 1.3rem)/1.5 var(--display); color: var(--ink-2); max-width: 30em; margin: 0; }
+.f-intro { position: relative; max-width: 480px; margin: 26px 0 0; padding: 22px 22px 16px; background: #f5ecfb; font-size: 1.36rem; line-height: 1.25; transform: rotate(-1.2deg); box-shadow: 0 10px 22px rgba(120, 60, 130, .14); border-radius: 3px 3px 18px 3px; }
+.f-intro::before { content: ""; position: absolute; top: -11px; left: 42%; width: 86px; height: 22px; background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .5) 0 5px, transparent 5px 10px), rgba(217, 107, 255, .42); transform: rotate(-3deg); }
+.f-hero-art { margin: 0; transform: rotate(1deg); }
+.f-hero-art img { width: 100%; }
+.f-hero-art figcaption { text-align: center; font: 600 1.4rem var(--hand); color: var(--link); transform: rotate(-3deg); margin-top: -4px; }
+
+/* Shared paper colors */
+.flowers-page :is(.f-paper .hand, .hand.f-intro) { color: var(--hand-ink, var(--paper-hand)); }
+.f-intro { --hand-ink: #5d3a78; }
+.f-paper { color: var(--f-ink); }
+.f-paper :where(p, li) { color: var(--f-ink); }
+.f-paper :where(h2, h3) { color: var(--f-head); }
+.f-paper :where(a) { color: #8f43bd; }
+:root[data-theme="dark"] :is(.f-journal, .f-intro, .f-tabs a) { filter: brightness(.94); }
+
+/* Paper tabs along the top of the journal */
+.f-tabs { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 6px; padding: 0 40px; }
+.f-tabs a { margin-bottom: -6px; padding: 8px 16px 13px; border-radius: 12px 12px 0 0; background: var(--tab, #efe3f7); color: #4c2f5c; font: 600 1.22rem var(--hand); text-decoration: none; box-shadow: 0 -2px 5px rgba(110, 60, 130, .08); transition: transform .2s ease; }
+.f-tabs a:nth-child(2) { --tab: #f8e2e9; }
+.f-tabs a:nth-child(3) { --tab: #e5efdb; }
+.f-tabs a:nth-child(4) { --tab: #fff0c7; }
+.f-tabs a:nth-child(5) { --tab: #e3e9fb; }
+.f-tabs a:hover { transform: translateY(-3px); }
+
+/* The journal itself, with its purple cover peeking out and a ribbon bookmark */
+.f-journal { position: relative; padding: 46px clamp(18px, 4vw, 56px) 50px; background: var(--f-paper); border-left: 12px solid #b996cf; border-radius: 8px 26px 26px 8px;
+  box-shadow: inset 0 0 0 10px var(--f-paper), inset 0 0 0 11px #e6d6ea, var(--shadow-lift); }
+.f-journal::after { content: ""; position: absolute; left: 18px; bottom: 16px; width: 110px; height: 150px; pointer-events: none; opacity: .75;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 160'%3E%3Cg fill='none' stroke='%23c3add2' stroke-width='1.4' stroke-linecap='round'%3E%3Cpath d='M20 150C40 110 60 70 100 20'/%3E%3Cpath d='M34 124c-12-6-18-14-20-24M34 124c10-2 18-8 22-18M48 98c-12-6-18-14-20-24M48 98c10-2 18-8 22-18M62 74c-10-6-16-14-17-23M62 74c9-2 16-8 20-17M78 50c-8-6-12-12-13-20M78 50c8-2 13-7 16-14'/%3E%3C/g%3E%3C/svg%3E") no-repeat center / contain; }
+.f-ribbon { position: absolute; top: -12px; right: 18px; z-index: 2; width: 22px; height: 150px; pointer-events: none; background: linear-gradient(90deg, #8a4fb0, #a768cf 50%, #8a4fb0); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 86%, 0 100%); }
+
+/* My signature flower */
+.f-signature { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 34px; align-items: center; scroll-margin-top: 120px; }
+.f-signature-art { background: radial-gradient(ellipse 58% 54% at 50% 52%, #f2e9fb, transparent 72%); }
+.f-signature-art img { width: 100%; }
+.f-signature-text .hand { font-size: 1.45rem; }
+.f-signature-text h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin: 4px 0 2px; }
+.f-flower-name { font: italic 500 clamp(2.4rem, 5vw, 3.4rem)/1.05 var(--display); letter-spacing: -.02em; color: var(--f-violet); margin: 4px 0 14px; }
+.f-signature-text > p:not(.f-flower-name):not(.hand) { font-size: .98rem; line-height: 1.75; }
+.f-words { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; padding: 0; }
+.f-words li { padding: 3px 10px; border: 1px solid #ddcdf0; border-radius: 2px; background: #f3ecfb; color: var(--f-violet); font: 600 1.12rem/1.3 var(--hand); }
+.f-swatches .hand { font-size: 1.28rem; }
+.f-swatches ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 6px 0 0; padding: 0; }
+.f-swatches li { display: flex; align-items: center; gap: 8px; font-size: .84rem; }
+.f-swatches li::before { content: ""; width: 22px; height: 22px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .6), 0 1px 3px rgba(80, 50, 100, .25); }
+.f-note { --hand-ink: var(--f-rose); display: inline-block; margin: 16px 0 4px; font-size: 1.65rem; transform: rotate(-3deg); }
+.f-aside { font-size: .82rem; color: var(--f-muted); margin: 0; }
+
+/* Sections, divided by a little pressed flower */
+.f-section { position: relative; margin-top: 56px; padding-top: 48px; border-top: 2px dashed #e4d3e8; scroll-margin-top: 100px; }
+.f-section::before { content: "✿"; position: absolute; top: -17px; left: 50%; padding: 0 12px; background: var(--f-paper); color: #b996cf; font-size: 1.35rem; transform: translateX(-50%); }
+.f-heading { max-width: 640px; margin: 0 auto 30px; text-align: center; }
+.f-heading .hand { font-size: 1.45rem; }
+.f-heading h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin: 4px 0 0; }
+.f-heading p { font-size: .94rem; margin: 6px 0 0; }
+
+/* Flowers I keep choosing: herbarium-style specimen sheets */
+.f-specimens { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 24px; margin: 0; padding: 0; }
+.f-specimen { position: relative; padding: 14px 14px 16px; background: #fffdf8; border: 1px solid #ece2e6; border-radius: 3px; box-shadow: 1px 4px 10px rgba(110, 80, 110, .1);
+  transform: rotate(var(--r, -.8deg)); transition: transform .3s cubic-bezier(.3, 1.4, .5, 1), box-shadow .3s ease; scroll-margin-top: 120px; }
+.f-specimen:nth-child(even) { --r: .9deg; }
+.f-specimen:nth-child(3n) { --r: -.3deg; }
+.f-specimen:hover { transform: rotate(0deg) translateY(-4px); box-shadow: var(--shadow-lift); }
+.f-specimen:target { outline: 3px solid #b996cf; outline-offset: 6px; animation: f-found 1.6s ease-out; }
+@keyframes f-found { 0% { box-shadow: 0 0 0 0 rgba(161, 83, 206, .5); } 100% { box-shadow: 0 0 0 18px rgba(161, 83, 206, 0); } }
+.f-specimen img { width: 100%; }
+.f-label { margin-top: 4px; padding: 8px 10px; text-align: center; background: #fffdf8; border: 1px solid #cdb9d6; box-shadow: inset 0 0 0 3px #fffdf8, inset 0 0 0 4px #e5d6ea; }
+.f-no { display: block; font: 800 .58rem var(--body); letter-spacing: .22em; color: #766080; }
+.f-label h3 { font: 500 1.18rem/1.2 var(--display); margin: 2px 0; }
+.f-tag { font: italic 400 .84rem var(--display); color: #8b5f8f; }
+.f-specimen > p { --hand-ink: #7a4f86; margin: 10px 2px 0; font-size: 1.18rem; line-height: 1.15; text-align: center; }
+
+/* If my mood were a flower */
+.f-moods { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin: 0; padding: 0; }
+.f-mood { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 12px; align-items: start; padding: 16px 16px 14px; background: #fbf5fb; border: 1px solid #ecdced; border-radius: 4px 4px 16px 4px; box-shadow: 1px 3px 8px rgba(110, 80, 110, .08); transform: rotate(var(--r, -.6deg)); }
+.f-mood:nth-child(even) { --r: .7deg; background: #fbf6ef; }
+.f-mood img { width: 62px; }
+.f-mood-name { margin: 0; font: 800 .64rem var(--body); letter-spacing: .14em; text-transform: uppercase; color: #766080; }
+.f-mood-flower { margin: 2px 0 4px; font: 500 1.22rem/1.2 var(--display); color: var(--f-head); }
+.f-mood p.hand { --hand-ink: #7a4f86; margin: 0 0 6px; font-size: 1.16rem; line-height: 1.15; }
+.f-mood a { font: 800 .76rem var(--body); text-underline-offset: 3px; }
+.f-mood.f-mood-me { background: #f1e8fb; border-color: #d9c8ef; }
+
+/* Little flower thoughts */
+.f-thoughts-wrap { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 28px; align-items: center; max-width: 920px; margin: 0 auto; }
+.f-vase { width: 100%; }
+.f-thoughts { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 22px 18px; margin: 0; padding: 0; }
+.f-thoughts li { --hand-ink: #4c2f5c; position: relative; max-width: 260px; padding: 16px 16px 12px; background: var(--scrap, #fff3c4); border-radius: 2px 2px 14px 2px; font-size: 1.32rem; line-height: 1.15; box-shadow: 0 5px 12px rgba(110, 70, 110, .12); transform: rotate(var(--r, -2deg)); }
+.f-thoughts li::before { content: ""; position: absolute; top: -8px; left: 50%; width: 46px; height: 15px; margin-left: -23px; background: rgba(214, 196, 228, .75); transform: rotate(3deg); }
+.f-thoughts li:nth-child(2) { --scrap: #fde3ea; --r: 1.6deg; }
+.f-thoughts li:nth-child(3) { --scrap: #ece2f8; --r: -1deg; }
+.f-thoughts li:nth-child(4) { --scrap: #e4f0dc; --r: 2deg; }
+.f-thoughts li:nth-child(5) { --scrap: #fbe7d9; --r: -1.6deg; }
+.f-thoughts li:nth-child(6) { --scrap: #e3ecfb; --r: 1deg; }
+
+/* If my world were a bouquet */
+.f-bouquet { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 30px; align-items: center; }
+.f-bouquet figure { background: radial-gradient(ellipse 50% 46% at 50% 46%, #f4ebf8, transparent 72%); }
+.f-bouquet img { width: 100%; max-width: 380px; margin: 0 auto; }
+.f-bouquet .hand { font-size: 1.45rem; }
+.f-bouquet h2 { font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin: 4px 0 0; }
+.f-bouquet-note { --hand-ink: #7a4f86; max-width: 440px; margin: 10px 0 0; font-size: 1.62rem; line-height: 1.2; }
+
+.f-outro { text-align: center; margin: 46px auto 0; max-width: 650px; }
+.f-outro > .hand { font-size: 1.6rem; color: var(--link); }
+.flowers-page :is(a, summary, [tabindex="-1"]):focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.f-paper :is(a, [tabindex="-1"]):focus-visible { outline-color: #835198; }
+
+@media (max-width: 1020px) {
+  :is(.f-signature, .f-section, .f-specimen) { scroll-margin-top: 190px; }
+  .f-signature { grid-template-columns: 1fr; gap: 10px; }
+  .f-signature-art { max-width: 620px; width: 100%; margin: 0 auto; }
+  .f-moods { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .f-specimens { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 18px; }
+  .f-bouquet { grid-template-columns: 1fr; text-align: center; }
+  .f-bouquet img { max-width: 300px; }
+  .f-bouquet .f-words { justify-content: center; }
+  .f-bouquet-note { margin-inline: auto; }
+}
+@media (max-width: 650px) {
+  .f-hero { grid-template-columns: 1fr; gap: 0; }
+  .f-hero-art { max-width: 440px; margin: 20px auto 6px; }
+  .f-hero h1 { max-width: none; }
+  .f-intro { font-size: 1.25rem; transform: rotate(-.6deg); }
+  .f-tabs { padding: 0 12px; gap: 4px; }
+  .f-tabs a { padding: 6px 10px 11px; font-size: 1.06rem; }
+  .f-journal { padding: 34px 16px 40px; border-left-width: 8px; border-radius: 6px 20px 20px 6px; }
+  .f-journal::after { display: none; }
+  .f-ribbon { right: 22px; height: 110px; width: 22px; }
+  .f-section { margin-top: 44px; padding-top: 40px; }
+  .f-specimen { padding: 10px 10px 12px; transform: none; }
+  .f-label { padding: 6px; }
+  .f-label h3 { font-size: 1.02rem; }
+  .f-specimen > p { font-size: 1.05rem; }
+  .f-moods { grid-template-columns: 1fr; }
+  .f-thoughts-wrap { grid-template-columns: 1fr; gap: 18px; }
+  .f-vase { max-width: 120px; margin: 0 auto; }
+  .f-thoughts li { max-width: none; font-size: 1.22rem; }
+}
+@media (max-width: 380px) {
+  .f-specimens { grid-template-columns: 1fr; }
+  .f-specimen img { max-width: 180px; margin-inline: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .flowers-page * { scroll-behavior: auto !important; } }

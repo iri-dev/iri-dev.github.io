@@ -1,0 +1,83 @@
+.hair-diary { color: var(--note-ink); }
+.hf-intro { margin: 3px 0 30px; max-width: 680px; }
+.hf-intro > .hand { color: var(--paper-hand); font-size: 1.4rem; }
+.hf-intro h3 { font-size: clamp(2rem,4vw,2.8rem); margin: 3px 0 12px; }
+.hf-intro p { margin: 0; }
+.hf-right-now { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,.7fr); gap: 35px; align-items: center; max-width: 900px; margin: 0 auto; }
+.hair-diary .note h4.hand { margin: 0 0 12px; font-weight: 700; }
+.hf-current { padding: 30px 26px 24px; }
+.hf-current ul, .hf-salon ul { margin: 10px 0 18px; padding-left: 19px; font-size: .95rem; }
+.hf-current li, .hf-salon li { margin-bottom: 5px; }
+.hair-diary .hf-hand-note { font: 1.45rem/1.25 var(--hand); margin: 12px 0 0; }
+.hf-section { margin-top: 40px; }
+.hf-heading { color: var(--paper-hand); font: 700 2rem/1.1 var(--hand); margin: 0 0 13px; }
+.hair-diary .hf-small { font-size: .78rem; line-height: 1.55; color: #6b5575; }
+.hf-looks { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 22px; margin-top: 24px; padding: 5px; }
+.hf-photo { position: relative; margin: 0; padding: 9px 9px 13px; background: #fff; color: #3a2443; box-shadow: 0 4px 13px #65357220; transform: rotate(-1.4deg); }
+.hf-photo::before { content: ''; position: absolute; top: -10px; left: calc(50% - 25px); width: 50px; height: 17px; background: repeating-linear-gradient(45deg,#fff4 0 4px,transparent 4px 8px),#d6b9e190; transform: rotate(5deg); pointer-events: none; z-index: 1; }
+.hf-photo:nth-child(2n) { transform: rotate(1.2deg); }
+.hf-photo button { display: block; width: 100%; padding: 0; border: 0; background: #f3eaf7; cursor: zoom-in; }
+.hf-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4/4.5; object-fit: cover; }
+.hf-photo figcaption { padding: 9px 3px 0; }
+.hf-photo-label { display: block; font: 700 1.4rem/1.05 var(--hand); color: #805491; }
+.hair-diary .hf-photo-note { font: 1.15rem/1.15 var(--hand); color: #553b5d; margin: 7px 0; }
+.hair-diary a.hf-credit { display: inline-block; font-size: .65rem; color: #72527e; line-height: 1.4; text-underline-offset: 3px; margin-top: 5px; }
+.hf-current-photo { max-width: 235px; justify-self: center; }
+.hf-current-photo .hf-photo { transform: rotate(3deg); }
+.hf-current-photo img { aspect-ratio: 4/5; }
+.hf-colors { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 22px; margin: 25px 0 20px; }
+.hf-color-note { position: relative; padding: 11px 11px 15px; background: #f5eafb; box-shadow: 0 3px 9px #6b3c7917; transform: rotate(.7deg); }
+.hf-color-note:nth-child(2n) { background: #fce9f0; transform: rotate(-1deg); }
+.hf-color-note .hf-photo { box-shadow: none; padding: 0; background: transparent; transform: none; }
+.hf-color-note .hf-photo::before { display: none; }
+.hf-color-note .hf-photo img { aspect-ratio: 4/3; object-position: center 30%; }
+.hf-color-note .hf-photo figcaption { padding: 9px 0 0; }
+.hf-color-note .hf-photo-label { font-size: 1.4rem; padding-right: 18px; }
+.hf-color-note .hf-credit { font-size: .58rem; }
+.hf-swatch { display: block; width: 13px; height: 28px; border-radius: 2px 2px 6px 2px; float: right; transform: rotate(7deg); margin-top: 8px; }
+.hair-diary .hf-color-opinion { font: 1.25rem/1.15 var(--hand); margin: 10px 0 0; }
+.hf-color-note .hf-small { margin-bottom: 0; font-size: .7rem; }
+.hf-bottom-notes { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.15fr); gap: 38px; margin: 45px 4px 35px; align-items: start; }
+.hf-salon { --r: -1deg; --tr: 3deg; }
+.hf-thoughts > div { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin-top: 18px; }
+.hf-thoughts .note { padding: 14px 16px; font: 1.3rem/1.2 var(--hand); margin: 0; }
+.hf-thoughts .note:nth-child(2n) { --r: 2deg; }
+.hf-thoughts .note:last-child { grid-column: 1/-1; width: fit-content; justify-self: center; }
+.hf-folder { margin-top: 35px; padding: 17px 20px 20px; border: 1px solid #d8bcdf; border-radius: 4px 13px 4px 4px; background: #f4e8f6; box-shadow: 2px 5px 9px #6b3c7910; }
+.hf-folder > summary { cursor: pointer; padding: 4px 0; color: #754986; }
+.hf-folder > summary .hand { font-size: 1.5rem; }
+.hf-folder > summary .hf-small { display: block; margin: 3px 0 0 19px; }
+.hf-folder .gallery-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.hair-diary .hf-folder .chips { gap: 7px; margin: 18px 0 25px; }
+.hair-diary .hf-folder .chips .chip { background: transparent; border: 0; border-radius: 0; border-bottom: 1px dashed #a17bb2; font: 1.2rem/1.2 var(--hand); padding: 6px 9px; min-height: 38px; color: #6d4582; }
+.hair-diary .hf-folder .chips .chip[aria-pressed="true"] { background: #e5ceed; border-bottom-style: solid; color: #432450; }
+.hf-signature { text-align: right; font-size: 1.45rem; color: var(--paper-hand) !important; margin: 24px 0 0; }
+.hair-diary section { scroll-margin-top: 120px; }
+.hair-diary :is(button,a,summary):focus-visible { outline: 3px solid #8f43bd; outline-offset: 4px; }
+@media (max-width: 760px) {
+  .hf-right-now { grid-template-columns: minmax(0,1.3fr) minmax(0,.8fr); gap: 20px; }
+  .hf-current { padding: 30px 20px 20px; }
+  .hf-looks { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+  .hf-colors { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+  .hf-bottom-notes { grid-template-columns: 1fr; gap: 35px; }
+  .hf-folder .gallery-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 520px) {
+  .hf-right-now { grid-template-columns: 1fr; gap: 30px; }
+  .hf-current-photo { width: 190px; }
+  .hf-looks { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px 15px; padding: 0; }
+  .hf-photo { padding: 6px 6px 10px; }
+  .hf-photo-label { font-size: 1.25rem; }
+  .hair-diary .hf-photo-note { font-size: 1.08rem; }
+  .hair-diary a.hf-credit { font-size: .58rem; overflow-wrap: anywhere; }
+  .hf-colors { gap: 20px 13px; }
+  .hf-color-note { padding: 9px; }
+  .hf-color-note .hf-photo-label { font-size: 1.2rem; }
+  .hf-thoughts .note { font-size: 1.2rem; }
+  .hf-folder { padding: 14px 12px 18px; }
+  .hf-folder .gallery-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hair-diary *, .hair-diary *::before, .hair-diary *::after { animation: none !important; transition: none !important; }
+  .hair-diary .note:hover, .hair-diary .shot:hover { transform: none; }
+}
